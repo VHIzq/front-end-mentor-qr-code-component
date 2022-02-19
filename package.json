@@ -4,7 +4,7 @@
   "description": "![Design preview for the QR code component coding challenge](./design/desktop-preview.jpg)",
   "main": "index.js",
   "scripts": {
-    "cssGo": "sass --watch ",
+    "cssGo": "sass --watch src/sass/styles.scss dist/css/styles.css ",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
