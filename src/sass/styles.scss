@@ -19,51 +19,68 @@ $light-gray: hsl(212, 45%, 89%);
 $grayish-blue: hsl(220, 15%, 55%);
 $dark-blue: hsl(218, 44%, 22%);
 
+$border-check: 1px solid red;
+
 
 html{
   font-family: 'Outfit', sans-serif;
   font-size: 15px;
 }
 
-body{
-  background-color: $light-gray;
-}
-
-
-
-.qr__container{
-  margin: 0 auto;
-  margin-top: 50px;
-  width: 300px;
-  background-color: $white;
-  border-radius: 10px;
-  box-shadow: 5px 5px 8px 5px $grayish-blue;
+.qr{
+  background-color: $dark-blue;
+  width: 100%;
+  height: 100vh;
+  display: flex;
   
-  .img__container{
-    text-align: center;
-    margin-bottom: 15px;
-    
-    .img__picture{
-      margin-top: 20px;  
-      width: 90%;
-      border-radius: 10px;
-    }
-  }
-
-  .text__container{
-    max-width: 85%;
+  .qr__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
     margin: 0 auto;
-    padding-bottom: 50px;
-    
-    & > h2{
+    overflow-x: hidden;
+
+    .img__container{
       text-align: center;
-      font-weight: 700;
-    }
-    
-    & > p{
-      padding-top: 10px;
-      text-align: center;
+      width: 250px;
+      height: 250px;
+      background-color: $white;
       
+      .img__picture{
+        width: 100%;
+        z-index: 10;
+      }
     }
-  }
+
+    .text__container{
+      text-align: center;
+      width: 220px;
+
+      h2{
+        color: $white;
+      }
+
+      input{
+        margin-top: 15px;
+        width: 100%;
+        font-size: 20px;
+        padding: 10px;
+        border: none;
+        outline: none;
+        border-radius: 8px;
+
+        &:focus{
+          border: orange;
+        }
+      }
+    }
+    button{
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+    }
+  } 
 }

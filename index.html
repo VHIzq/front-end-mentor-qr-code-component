@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,16 +11,17 @@
   <section class="qr">
     <article class="qr__container">
       <div class="img__container">
-        <img src="src/images/image-qr-code.png" alt="" class="img__picture">
+        <div id="qrcode" class="img__picture">
+        </div>
       </div> 
       <div class="text__container">
-        <h2>Improve your front-end <br > skills by building projects</h2>
-        <p>
-          Scan QR Code to visit FrontEnd <br> Mentor and take your coding skills to
-          next level
-        </p>
+        <h2>ENTER YOUR DATA</h2>
+        <input id="qr-data" type="text">
       </div>
+        <button id="btn__clear" type="button">Clear QR Code</button>
     </article>
   </section>
+  <script src="src/js/qrcode.min.js"></script>
+  <script src="src/js/main.js"></script>
 </body>
 </html>
