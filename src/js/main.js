@@ -1,6 +1,5 @@
 
 const $qrData = document.getElementById("qr-data");
-const $btnClear = document.getElementById("btn__clear");
 const $btnCreate = document.getElementById("btn__create");
 const qrCode = new QRCode(document.getElementById("qrcode"));
 const $qrCodeClass = document.getElementsByClassName("img__picture");
@@ -13,11 +12,6 @@ $btnCreate.addEventListener("click", () => {
 	qrCode.makeCode(dataValue);
 	dataValue !== "Tesyl" ? null : modal();
 });
-
-$btnClear.addEventListener("click", () => {
-
-	document.getElementsByClassName("img__container").innerHTML = "";
-})
 
 function modal(){
 	$modal.style.visibility = "visible";
