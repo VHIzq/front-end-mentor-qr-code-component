@@ -31,8 +31,9 @@ body{
 }
 
 .qr{
+  margin-top: 10px;
   width: 100%;
-  height: 90vh;
+  height: 85vh;
   display: flex;
   
   .qr__container{
@@ -84,4 +85,23 @@ body{
       cursor: pointer;
     }
   } 
+}
+.modal{
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 30vh;
+  left: calc(50% - 90px);
+  width: 180px;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 5%;
+  background-color: orange;
+
+  #close-btn{
+    font-size: 18px;
+    font-weight: 700;
+    align-self: flex-end;
+  }
 }
