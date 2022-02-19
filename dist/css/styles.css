@@ -16,10 +16,13 @@ html {
   font-size: 15px;
 }
 
-.qr {
+body {
   background-color: #1f3251;
+}
+
+.qr {
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   display: flex;
 }
 .qr .qr__container {
