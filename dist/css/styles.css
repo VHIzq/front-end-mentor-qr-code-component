@@ -38,7 +38,6 @@ html {
 }
 .qr .qr__container .img__container .img__picture {
   width: 100%;
-  z-index: 10;
 }
 .qr .qr__container .text__container {
   text-align: center;
